@@ -1,0 +1,141 @@
+/* Start Header */
+.header {
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .header .logo {
+    width: 60px;
+  }
+  
+  .header .links {
+    list-style: none;
+    display: flex;
+    position: relative;
+  }
+  
+  .header .links > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    transition: var(--main-transition);
+    overflow: hidden;
+  }
+
+  .mobile-nav-links{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .mobile-nav-links{
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+
+  }
+  .mobile-nav-links li a{
+    color: white !important;
+  }
+  
+  .header .links > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #269432;
+    top: 0;
+    left: -100%;
+    transition: var(--main-transition);
+  }
+  
+  .header .links > li > a:hover {
+    color: #269432;
+    background-color: #fafafa;
+  }
+  
+  .header .links > li > a:hover::before {
+    left: 0%;
+  }
+  
+  .navegate .btnLogin-popup {
+    margin-top: 11px;
+    margin-left: 40px;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #269432;
+    color: #269432;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--main-transition);
+  }
+  
+  .navegate .btnLogin-popup:hover {
+    background: #269432;
+    color: white;
+  }
+  
+  /* End Header */
+
+
+  @media screen and (min-width: 800px){
+    .bars{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .links-none{
+      display: none !important;
+    }
+    .bars{
+      display: block;
+      font-size: 20px;
+    }
+  }
+
+  .nav{
+    position: relative;
+  }
+
+
+  .mobile-nav{
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
+    transition-duration: 0.6s;
+    padding-top: 50px;
+  }
+
+  .nav-hide{
+    right: -100%;
+  }
+  .nav-show{
+    right: 0px;
+  }
+
+  .cross{
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    color: white;
+    z-index: 9999;
+    font-size: 25px;
+  }

@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .first-box-cd, .second-box-cd{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+  }
+  
+  .body-cd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* height: 100vh; */
+    width: 100%;
+    background: url(../../../public/images/Black\ gym.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 1310px){}
+
+
+  
+  .container-cd {
+    /* position: relative; */
+    margin: 50px 0px;
+    width: 90%;
+    height: 85%;
+    background: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-cd h1 {
+    font-size: 2em;
+    color: #269432;
+    margin-left: 41px;
+    margin-top: 20px;
+  }
+  
+  .container-cd .box-cd {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+  
+  .box-cd img {
+    /* width: 700px; */
+    margin-top: 40px;
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .container-cd .second-box-cd form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  @media screen and (max-width: 650px){
+    .det-cd{
+        flex-direction: column;
+    }
+
+    .container-cd .details-cd .det-cd li p {
+        margin-left: 0px !important;
+        text-align: center !important;
+      }
+
+      .container-cd .details-cd .det-cd li i {
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .container-cd .details-cd .det-cd li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+  @media screen and (max-width: 600px){
+    .container-cd .box-cd {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        padding-bottom: 40px;
+      }
+  }
+  @media screen and (max-width: 1310px){
+    form{
+        /* margin-right: 60px; */
+    }
+    .container-cd .box-cd{
+        flex-direction: column;
+    }
+    .first-box-cd, .second-box-cd{
+        height: 100%;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+      }
+      .det-cd{
+        margin-top: 15px;
+      }
+
+      .class-submit-cd{
+        margin-top: 0px !important;
+      }
+
+      .classtitle{
+        margin-top: 20px;
+      }
+
+     
+
+      .container-cd .second-box-cd form {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        
+      }
+
+      .form-text{
+        text-align: center;
+      }
+  }
+  
+  .container-cd h2 {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  
+  .container-cd .class-submit-cd {
+    /* width: 330px; */
+    height: 50px;
+    background-color: #269432;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    /* margin-left: 250px; */
+    margin-top: 30px;
+  }
+  
+  .container-cd .class-submit-cd:hover {
+    background: #207a2b;
+  }
+  
+  .container-cd p {
+    /* width: 100%; */
+    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 35px;
+    font-size: 20px;
+  }
+  
+  .container-cd .second-box-cd .sec-p-cd {
+    padding-bottom: 5px;
+  }
+  
+  .container-cd .details-cd .det-cd {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .container-cd .details-cd .det-cd li i {
+    margin-right: 80px;
+    padding-left: 62px;
+    padding-top: 5px;
+  }
+  
+  .container-cd .details-cd .det-cd li p {
+    font-size: 17px;
+  }
+  
+  .container-cd .details-cd .det-cd li .timer-cd {
+    margin-left: 26px;
+  }
+  
+  .container-cd .details-cd .det-cd li .location-cd {
+    margin-left: 30px;
+  }
+  

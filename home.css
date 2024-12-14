@@ -1,0 +1,101 @@
+
+
+
+
+
+  /* Start Home */
+  .home {
+    background-image: url(../../../public/images/dd0b1c76-8172-45a7-818f-c8632c716507.jpg);
+    background-size: cover;
+    min-height: calc(100vh - 64px);
+    position: relative;
+    margin-bottom: 60px;
+    /* overflow: hidden; */
+    margin-top: -20px;
+  }
+
+  @media screen and (max-width: 850px){
+
+    .home{
+      min-height: 100px;
+      margin-bottom: 40px;
+      padding-bottom: 60px;
+    }
+
+  }
+  
+  .home .intro-text {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+  }
+  
+  .home .intro-text h1 {
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    width: 628px;
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 850px){
+    .home .intro-text h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-align: center;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 60px;
+    }
+
+    .home .intro-text p {
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 600;
+      width: 100% !important;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      padding-top: 0px;
+    }
+  
+  }
+
+  @media screen and (max-width: 600px){
+    .home .intro-text h1 {
+      margin: 0;
+      font-size: 1.8em;
+      text-align: center;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 60px;
+    }
+
+    .home .intro-text p {
+      font-size: 17px !important;
+      font-style: italic;
+      font-weight: 600;
+      width: 100% !important;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+    }
+  
+  }
+  
+  .home .intro-text p {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    width: 628px;
+  }
+  /* End Home */

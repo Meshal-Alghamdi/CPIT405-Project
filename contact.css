@@ -1,0 +1,207 @@
+/* Start Contact */
+.contact-c {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 850px){
+  .contact-c {
+    
+    flex-direction: column;
+  }
+
+  
+  
+}
+
+/* .main-title-c {
+  margin: 0 auto 80px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: var(--main-transition);
+} */
+
+.contact-c .content-c {
+  background-image: url(../../../public/images/green-gradient-background-gg207vydw2b9tcro.jpg);
+  background-size: cover;
+  height: 850px;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-c .content-c h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+
+.contact-c .content-c {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-c .content-c::before {
+  content: "";
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #269432;
+  z-index: -1;
+ 
+}
+
+.contact-c .form-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 850px){
+  .contact-c .form-c .input-c {
+    width: 100% !important;
+    margin-left: 1px !important;
+  }
+
+  .contact-c .form-c {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    
+  }
+
+  .contact-c .content-c {
+    background-image: url(../../../public/images/green-gradient-background-gg207vydw2b9tcro.jpg);
+    background-size: cover;
+    height: 850px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .submit-send{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+
+
+}
+
+.contact-c .form-c h2 {
+  margin-left: 29px;
+  font-size: 32px;
+  padding-bottom: 20px;
+  margin-top: -50px;
+}
+
+.contact-c .form-c .input-c {
+  display: block;
+  width: 300%;
+  margin-left: -128px;
+  margin-right: 42px;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: #269432;
+}
+
+.contact-c .form-c textarea.input-c {
+  resize: none;
+  height: 200px;
+}
+
+.contact-c .form-c .input-c:focus {
+  outline: none;
+}
+
+.contact-c .form-c [type="submit"] {
+  display: block;
+  width: 100%;
+  /* margin-left: 128px; */
+  margin-right: 42px;
+  padding: 15px;
+  background-color: #269432;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.contact-c .form-c [type="submit"]:hover {
+  background-color: #207a2b;
+}
+/* Error text styling */
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 10px;
+}
+
+/* Error input border styling */
+.error-border {
+  border: 2px solid red;
+}
+
+/* General styling for the input fields */
+.input-c {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-c:focus {
+  outline: none;
+  border: 2px solid #007bff;
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #000; /* Adjust the color as needed */
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* End Contact */
